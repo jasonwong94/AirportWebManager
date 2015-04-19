@@ -1,0 +1,231 @@
+<HTML>
+	<head>
+		<title>Home</title>
+		<style>
+			article{
+				border:1px solid black;
+				background-color: lightgray;
+				margin: 10px;
+				clear:both;
+				float:default;
+			}
+
+			article:hover{
+				background-color:black;
+			}
+
+			aside{
+				width: 25%;
+				border: 1px solid navy;
+				border-radius: 5px;
+				background-color:navy;
+				color:white;
+			}
+
+			aside> section{
+				float:left;
+				/*background-color: yellow;*/
+				width: 25%;
+			}
+
+			body{
+				font-family:"Arial";
+			}
+
+			h2{
+				border-width: 1px;
+				border-bottom-style: solid;
+				text-align:center;
+				font-family:"Arial";
+			}
+
+			table{
+				border-collapse: collapse;
+				margin-left: 50px;
+			}
+
+			table, th, td{
+				border:1px solid white;
+			}
+
+			th{
+				background-color: gray;
+				color:white;
+			}
+
+			td{
+				background-color:white;
+			}
+
+			button{
+				font-size: 16px;
+				width: 100px;
+				font-family:"Helvetica";
+			}
+
+			.arrivals{
+				/*set the background colour*/
+			}
+
+			.departures{
+
+			}
+
+			.cancel{
+
+			}
+
+			select{
+				outline:0px;
+				background-color: black;
+				font-size: 14px;
+				border: 1px solid green;
+				width: 100px;
+				color: limegreen;
+			}
+
+			#arrivals{
+				color: limegreen;
+				float:left;
+				width:50%;
+			}
+
+			#departures{
+				color: yellow;
+				float:left;
+				width:50%;
+			}
+
+			#apron{
+				color: dodgerblue;
+			}
+
+			#terminal{
+				color: red;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header>
+			Departures:
+			Arrivals:
+			Apron:
+			De-icing:
+		</header>
+
+		<aside>
+			<h2>Radio Frequencies:</h2>
+			
+				<section>
+					<form>
+				<b>Departures</b>
+				<br>128.80<input type="checkbox" name="departures" value="128.80"></input>				
+				<br>128.70<input type="checkbox" name="departures" value="128.70"></input>
+				</form>
+				</section>
+				<section>
+					<form>
+				<b>Arrivals</b>
+				<br>124.80<input type="checkbox" name="departures" value="124.80"></input>				
+				<br>124.70<input type="checkbox" name="departures" value="124.70"></input>
+				</form>
+				</section>
+				<section>
+					<form>
+				<b>Apron</b>
+				<br>124.80<input type="checkbox" name="departures" value="124.80"></input>				
+				<br>124.70<input type="checkbox" name="departures" value="124.70"></input>
+				</form>
+				</section>
+				<section>
+					<form>
+				<b>De-icing</b>
+				<br>124.80<input type="checkbox" name="departures" value="124.80"></input>				
+				<br>124.70<input type="checkbox" name="departures" value="124.70"></input>
+				</form>
+				</section>
+			
+			<div style="clear:both"></div>
+			<h2>Runways:</h2>
+			<form>
+				Runway 15L/33R
+				<select>
+					<option value="active">Active</option>
+					<option value="inactive">Inactive</option>
+				</select>
+				<br>Runway 15R/33L
+				<select>
+					<option value="active">Active</option>
+					<option value="inactive">Inactive</option>
+				</select>
+				<br>Runway 8/23
+				<select>
+					<option value="active">Active</option>
+					<option value="inactive">Inactive</option>
+				</select>
+			</form>
+		</aside>
+
+		<article id="arrivals">
+			<h2>Arrivals</h2>
+			<h3>Runway 15L/33R</h3>
+			<h3>Runway 15R/33R</h3>
+			<h3>Runway 8/23</h3>
+
+		</article>
+
+		<article id="departures">
+			<h2>Departures</h2>
+			<h3>Runway 15L/33R</h3>
+			<h3>Runway 15R/33R</h3>
+			<h3>Runway 8/23</h3>
+		</article>
+
+		<article id="apron">
+			<h2>Apron</h2>
+		</article>
+
+		<article id="terminal">
+			<h2>Terminal</h2>
+
+			<section id="Terminal 1">
+				<h3>Terminal 1</h3>
+				<table>
+					<th>Gate</th>
+					<th width= "40%">Airline</th>
+					<th>Flight #</th>
+					<th width= "20%">Destination</th>
+					<th>Departure Time</th>
+					<th width="40%">Status</th>
+					<tr>
+						<td>1</td>
+						<td>Air Canada</td>
+						<td>AC123</td>
+						<td>Toronto</td>
+						<td>
+							<form>
+								<input type="time"></input>
+							</form>
+						</td>
+						<td>
+							<form>
+								<button>Depart</button>
+								<button>Delayed</button>
+								<button>Cancelled</button>
+								<input type="textbox"></input>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</section>
+
+			<section id="Terminal 2">
+				<h3>Terminal 2</h3>
+			</section>
+		</article>
+
+	<body>
+
+</HTML>

@@ -1,0 +1,76 @@
+<HTML>
+	<head>
+		<title>Log in</title>
+		<style>
+			article{
+				border: 1px solid navy;
+				border-radius: 5px;
+				font-size: 24px;
+				margin-left:35%;
+				margin-right: 35%;
+				margin-top: 20%;
+				margin-bottom: 20%;
+				padding: 10px;
+				background-color:white;
+			}
+
+			button{
+				float:right;
+				color:green;
+				background-color:white;
+				border: 2px solid green;
+				border-radius: 5px;
+				font-size: 25px;
+
+			}
+
+			input{
+				margin-top: 5px;
+				margin-bottom: 5px;
+				float: right;
+				font-size: 25px;
+				border:1px dashed gray;
+				border-radius: 5px;
+			}
+
+			input:focus, textarea:focus{
+				outline:0;
+				/*background-color:lightgray;*/
+				color:purple;
+				border:1px solid purple;
+				font-weight:lighter;
+			}
+
+			body{
+				font-family:"Tahoma";
+				color:Gray;
+				background-color:white;
+			}
+
+			h1{
+				font-weight:lighter;
+				color:firebrick;
+				text-align:center;
+				font-size: 24px;
+				border-bottom: 1px solid firebrick;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<article>
+			<h1>Enter credentials to log in</h1>
+			<form action="">
+				ID<input type="text" required></input><br>
+				<div style="clear:both"></div>
+				Password<input type="password" required></input><br>
+				<div style="clear:both"></div>
+				<p>
+				<button>Login</button>
+				<button style="float:left">Help</button>
+				<div style="clear:both"></div>
+			</form>
+		</article>
+	</body>
+</HTML>
