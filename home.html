@@ -1,18 +1,23 @@
 <HTML>
 	<head>
 		<title>Home</title>
+		<!-- Jquery libraries -->
+			<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		  	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 		<style>
 			article{
 				border:1px solid black;
-				background-color: lightgray;
+				background-color: black;
 				margin: 10px;
 				clear:both;
-				float:default;
+				border-radius: 10px;
 			}
 
-			article:hover{
+			/*article:hover{
 				background-color:black;
-			}
+			}*/
 
 			aside{
 				width: 25%;
@@ -30,6 +35,29 @@
 
 			body{
 				font-family:"Arial";
+				margin: 0px;
+				padding: 0px;
+				/*padding-top: 60px;*/
+				background-color: black;
+				color:white;
+			}
+
+			header{
+				position:fixed;
+				background-color:black;
+				width: 100%;
+				color: white;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			h1{
+				padding-top: 70px;
+				font-size: 36px;
+				font-weight: lighter;
+				border-bottom: 1px solid white;
+				text-align: center;
+				color: orange;
 			}
 
 			h2{
@@ -39,9 +67,19 @@
 				font-family:"Arial";
 			}
 
+			h4{
+				line-height: :0px;
+				margin: 0px;
+				padding: 5px;
+				background-color:navy;
+				height: 20px;
+				text-align:center;
+			}
+
 			table{
+				color:black;
 				border-collapse: collapse;
-				margin-left: 50px;
+				margin-left: 20px;
 			}
 
 			table, th, td{
@@ -61,17 +99,21 @@
 				font-size: 16px;
 				width: 100px;
 				font-family:"Helvetica";
+				border-width: 1px;
+				border-color:black;
+				border-radius: 5px;
+				background-color: white;
+				margin: 5px;
+				/*background-color:black;*/
 			}
 
-			.arrivals{
+			#arrivals{
+				width:50%;
 				/*set the background colour*/
 			}
 
-			.departures{
-
-			}
-
-			.cancel{
+			#departures{
+				width:50%;
 
 			}
 
@@ -84,26 +126,52 @@
 				color: limegreen;
 			}
 
-			#arrivals{
+			.arrivals{
+				border-color: DeepPink;
+				color: DeepPink ;
+				float:left;
+				
+			}
+
+			.departures{
+				border-color:limegreen;
 				color: limegreen;
-				float:left;
-				width:50%;
 			}
 
-			#departures{
-				color: yellow;
-				float:left;
-				width:50%;
-			}
-
-			#apron{
+			.apron{
+				border-color:dodgerblue;
 				color: dodgerblue;
 			}
 
-			#terminal{
-				color: red;
+			.terminal{
+				border-color:slateblue;
+				color: slateblue;
 			}
+
+			.delay{
+				border-color:gold;
+				color:gold;
+			}
+
+			.cancel{
+				border-color:firebrick;
+				color:firebrick;
+			}
+
+			.flightnode{
+				width: 150px;
+				height: 150px;
+				border: 1px solid white;
+				margin: 5px;
+				background-color: lightgray;
+				float:left;
+			}
+
 		</style>
+
+		<script>
+		
+		</script>
 
 	</head>
 
@@ -113,7 +181,10 @@
 			Arrivals:
 			Apron:
 			De-icing:
+			<b>Security Clearance</b>
 		</header>
+
+		<h1>Airport Management System</h1>
 
 		<aside>
 			<h2>Radio Frequencies:</h2>
@@ -168,7 +239,7 @@
 			</form>
 		</aside>
 
-		<article id="arrivals">
+		<article class="arrivals" id="arrivals">
 			<h2>Arrivals</h2>
 			<h3>Runway 15L/33R</h3>
 			<h3>Runway 15R/33R</h3>
@@ -176,29 +247,58 @@
 
 		</article>
 
-		<article id="departures">
+		<article class="departures" id="departures">
 			<h2>Departures</h2>
 			<h3>Runway 15L/33R</h3>
 			<h3>Runway 15R/33R</h3>
 			<h3>Runway 8/23</h3>
 		</article>
 
-		<article id="apron">
+		<article class="apron" id="apron">
 			<h2>Apron</h2>
+			<br>
+			<div class="flightnode">
+				<h4>AC123</h4>
+				<p>Air Canada</p>
+				<p>Departure: 13:45
+				<br>Toronto
+			</div>
+
+			<div class="flightnode">
+				<h4>AC123</h4>
+				<p>Air Canada</p>
+				<p>Departure: 13:45
+				<br>Toronto
+			</div>
+
+			<div class="flightnode">
+				<h4>AC123</h4>
+				<p>Air Canada</p>
+				<p>Departure: 13:45
+				<br>Toronto
+			</div>
+
+			<div class="flightnode">
+				<h4>AC123</h4>
+				<p>Air Canada</p>
+				<p>Departure: 13:45
+				<br>Toronto
+			</div>
 		</article>
 
-		<article id="terminal">
+		<article class="terminal" id="terminal">
 			<h2>Terminal</h2>
 
 			<section id="Terminal 1">
 				<h3>Terminal 1</h3>
 				<table>
 					<th>Gate</th>
-					<th width= "40%">Airline</th>
+					<th width= "20%">Airline</th>
 					<th>Flight #</th>
-					<th width= "20%">Destination</th>
+					<th width= "15%">Destination</th>
 					<th>Departure Time</th>
-					<th width="40%">Status</th>
+					<th width="30%">Status</th>
+					<th width="30%">Remarks</th>
 					<tr>
 						<td>1</td>
 						<td>Air Canada</td>
@@ -211,11 +311,13 @@
 						</td>
 						<td>
 							<form>
-								<button>Depart</button>
-								<button>Delayed</button>
-								<button>Cancelled</button>
-								<input type="textbox"></input>
+								<button class="departures">Depart</button>
+								<button class="delay">Delayed</button>
+								<button class="cancel">Cancelled</button>
 							</form>
+						</td>
+						<td>
+							<input type="textbox"></input>
 						</td>
 					</tr>
 				</table>
@@ -225,7 +327,6 @@
 				<h3>Terminal 2</h3>
 			</section>
 		</article>
-
-	<body>
+	</body>
 
 </HTML>
