@@ -13,6 +13,7 @@
 				margin: 10px;
 				clear:both;
 				border-radius: 10px;
+				padding: 5px;
 			}
 
 			/*article:hover{
@@ -44,9 +45,9 @@
 
 			header{
 				position:fixed;
-				background-color:black;
+				background-color:white;
 				width: 100%;
-				color: white;
+				color: black;
 				padding-top: 20px;
 				padding-bottom: 20px;
 			}
@@ -55,7 +56,7 @@
 				padding-top: 70px;
 				font-size: 36px;
 				font-weight: lighter;
-				border-bottom: 1px solid white;
+				border-bottom: 1px solid orange;
 				text-align: center;
 				color: orange;
 			}
@@ -70,9 +71,10 @@
 			h4{
 				line-height: :0px;
 				margin: 0px;
-				padding: 5px;
+				padding: 10px;
 				background-color:navy;
 				height: 20px;
+				font-size: 20px;
 				text-align:center;
 			}
 
@@ -80,14 +82,16 @@
 				color:black;
 				border-collapse: collapse;
 				margin-left: 20px;
+				margin-right: 20px;
 			}
 
 			table, th, td{
 				border:1px solid white;
+				text-align: center;
 			}
 
 			th{
-				background-color: gray;
+				background-color: #2B0239;
 				color:white;
 			}
 
@@ -109,6 +113,8 @@
 
 			#arrivals{
 				width:50%;
+				display:inline;
+				float:left;
 				/*set the background colour*/
 			}
 
@@ -126,16 +132,9 @@
 				color: limegreen;
 			}
 
-			.arrivals{
-				border-color: DeepPink;
-				color: DeepPink ;
-				float:left;
-				
-			}
-
-			.departures{
-				border-color:limegreen;
-				color: limegreen;
+			.runway{
+				border-color: yellow;
+				color:yellow;
 			}
 
 			.apron{
@@ -163,8 +162,36 @@
 				height: 150px;
 				border: 1px solid white;
 				margin: 5px;
-				background-color: lightgray;
+				background-color: #202020;
 				float:left;
+				display:inline-block;
+			}
+
+			.arrivals{
+				border-color: DeepPink;
+				color: DeepPink ;	
+			}
+
+			.arrivals > h4{
+				background-color: #430202;
+			}
+
+			.departures > h4{
+				background-color: #1D3902;
+			}
+
+			.departures{
+				border-color:limegreen;
+				color: limegreen;
+			}
+
+			article> section{
+				margin: 10px;
+				border: 1px solid gray;
+				display: block;
+				overflow:hidden;
+				background-color: #202020;
+				padding: 5px;
 			}
 
 		</style>
@@ -177,11 +204,14 @@
 
 	<body>
 		<header>
-			Departures:
+			<span>Departures:
 			Arrivals:
 			Apron:
 			De-icing:
+			</span>
+			<span style="float:right">
 			<b>Security Clearance</b>
+			</span>
 		</header>
 
 		<h1>Airport Management System</h1>
@@ -239,7 +269,61 @@
 			</form>
 		</aside>
 
-		<article class="arrivals" id="arrivals">
+
+		<article class="runway" id="runway">
+			<h2>Departures</h2>
+			<h3>Runway 15L/33R</h3>
+				<section id="15Lqueue">
+					<div class="flightnode departures">
+				<h4>AC123</h4>
+				<center><i>Air Canada</i></center>
+				<p>13:45
+				<br>Dest: Toronto
+				<button> 128.8</button>
+			</div>
+
+			<div class="flightnode arrivals">
+				<h4>AC123</h4>
+				<center><i>Air Canada</i></center>
+				<p>13:45
+				<br>From: Toronto
+			</div>
+				</section>
+			<h3>Runway 15R/33R</h3>
+				<section id="15Rqueue">
+					<div class="flightnode departures">
+				<h4>AC123</h4>
+				<center><i>Air Canada</i></center>
+				<p>13:45
+				<br>Dest: Toronto
+			</div>
+
+			<div class="flightnode arrivals">
+				<h4>AC123</h4>
+				<center><i>Air Canada</i></center>
+				<p>13:45
+				<br>From: Toronto
+			</div>
+				</section>
+			<h3>Runway 8/23</h3>
+				<section id="8queue">
+					<div class="flightnode departures">
+				<h4>AC123</h4>
+				<center><i>Air Canada</i></center>
+				<p>13:45
+				<br>Dest: Toronto
+			</div>
+
+			<div class="flightnode arrivals">
+				<h4>AC123</h4>
+				<center><i>Air Canada</i></center>
+				<p>13:45
+				<br>From: Toronto
+			</div>
+				</section>
+		</article>
+
+		<!-- <article class="arrivals" id="arrivals">
 			<h2>Arrivals</h2>
 			<h3>Runway 15L/33R</h3>
 			<h3>Runway 15R/33R</h3>
@@ -250,40 +334,48 @@
 		<article class="departures" id="departures">
 			<h2>Departures</h2>
 			<h3>Runway 15L/33R</h3>
+				<section id="15Lqueue">
+				</section>
 			<h3>Runway 15R/33R</h3>
+				<section id="15Rqueue">
+				</section>
 			<h3>Runway 8/23</h3>
-		</article>
+				<section id="8queue">
+				</section>
+		</article> -->
 
 		<article class="apron" id="apron">
 			<h2>Apron</h2>
 			<br>
+			<section id="apronqueue">
+			<div class="flightnode departures">
+				<h4>AC123</h4>
+				<center><i>Air Canada</i></center>
+				<p>13:45
+				<br>Dest: Toronto
+			</div>
+
+			<div class="flightnode arrivals">
+				<h4>AC123</h4>
+				<center><i>Air Canada</i></center>
+				<p>13:45
+				<br>From: Toronto
+			</div>
+
 			<div class="flightnode">
 				<h4>AC123</h4>
-				<p>Air Canada</p>
-				<p>Departure: 13:45
+				<center><i>Air Canada</i></center>
+				<p>13:45
 				<br>Toronto
 			</div>
 
 			<div class="flightnode">
 				<h4>AC123</h4>
 				<p>Air Canada</p>
-				<p>Departure: 13:45
+				<p>13:45
 				<br>Toronto
 			</div>
-
-			<div class="flightnode">
-				<h4>AC123</h4>
-				<p>Air Canada</p>
-				<p>Departure: 13:45
-				<br>Toronto
-			</div>
-
-			<div class="flightnode">
-				<h4>AC123</h4>
-				<p>Air Canada</p>
-				<p>Departure: 13:45
-				<br>Toronto
-			</div>
+			</section>
 		</article>
 
 		<article class="terminal" id="terminal">
