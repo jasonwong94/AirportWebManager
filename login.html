@@ -3,25 +3,40 @@
 		<title>Log in</title>
 		<style>
 			article{
-				border: 1px solid navy;
+				border: 1px solid limegreen;
 				border-radius: 5px;
 				font-size: 24px;
 				margin-left:35%;
 				margin-right: 35%;
 				margin-top: 20%;
-				margin-bottom: 20%;
+				height: 250px;
 				padding: 10px;
-				background-color:white;
+				background-color: #1C1C1C;
 			}
 
 			button{
 				float:right;
-				color:green;
+				
 				background-color:white;
-				border: 2px solid green;
+				
 				border-radius: 5px;
 				font-size: 25px;
 
+			}
+
+			.login{
+				color:green;
+				border: 2px solid limegreen;
+			}
+
+			.help{
+				color:navy;
+				border: 2px solid dodgerblue;
+			}
+
+			button:focus, button:hover{
+				outline: 0;
+				background-color: black;
 			}
 
 			input{
@@ -31,28 +46,31 @@
 				font-size: 25px;
 				border:1px dashed gray;
 				border-radius: 5px;
+				background-color: white;
+				color: navy;
 			}
 
 			input:focus, textarea:focus{
 				outline:0;
 				/*background-color:lightgray;*/
-				color:purple;
-				border:1px solid purple;
+				color:dodgerblue;
+				background-color: navy;
+				border:1px solid dodgerblue;
 				font-weight:lighter;
 			}
 
 			body{
 				font-family:"Tahoma";
-				color:Gray;
-				background-color:white;
+				color:white;
+				background-color:black;
 			}
 
 			h1{
 				font-weight:lighter;
-				color:firebrick;
+				color:yellow;
 				text-align:center;
 				font-size: 24px;
-				border-bottom: 1px solid firebrick;
+				border-bottom: 1px solid yellow;
 			}
 
 		</style>
@@ -67,8 +85,8 @@
 				Password<input type="password" required></input><br>
 				<div style="clear:both"></div>
 				<p>
-				<button>Login</button>
-				<button style="float:left">Help</button>
+				<button class="login">Login</button>
+				<button style="float:left" class="help">Help</button>
 				<div style="clear:both"></div>
 			</form>
 		</article>

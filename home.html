@@ -35,7 +35,7 @@
 			}
 
 			body{
-				font-family:"Arial";
+				font-family:"Tahoma";
 				margin: 0px;
 				padding: 0px;
 				/*padding-top: 60px;*/
@@ -48,8 +48,17 @@
 				background-color:white;
 				width: 100%;
 				color: black;
-				padding-top: 20px;
-				padding-bottom: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-bottom: 2px solid orange;
+			}
+
+			header > center{
+				line-height: 0px;
+			}
+
+			h1, h2, h3, h4{
+				font-weight: lighter;
 			}
 
 			h1{
@@ -66,10 +75,11 @@
 				border-bottom-style: solid;
 				text-align:center;
 				font-family:"Arial";
+				font-weight: lighter;
 			}
 
 			h4{
-				line-height: :0px;
+				line-height:0px;
 				margin: 0px;
 				padding: 10px;
 				background-color:navy;
@@ -91,12 +101,15 @@
 			}
 
 			th{
+				font-weight: lighter;
+				font-size: 16px;
 				background-color: #2B0239;
 				color:white;
 			}
 
 			td{
 				background-color:white;
+				font-size: 14px;
 			}
 
 			button{
@@ -107,7 +120,7 @@
 				border-color:black;
 				border-radius: 5px;
 				background-color: white;
-				margin: 5px;
+				margin: 2.5px;
 				/*background-color:black;*/
 			}
 
@@ -204,17 +217,21 @@
 
 	<body>
 		<header>
-			<span>Departures:
+			<span>
+				<b>Security Clearance</b>
+			Departures:
 			Arrivals:
 			Apron:
 			De-icing:
+			
 			</span>
-			<span style="float:right">
-			<b>Security Clearance</b>
-			</span>
+			<!-- <center>Control Tower System</center> -->
+			<span>
+			<button style="float:right">Logout</button>
+			
 		</header>
 
-		<h1>Airport Management System</h1>
+		<!-- <h1>Control Tower System</h1> -->
 
 		<aside>
 			<h2>Radio Frequencies:</h2>
