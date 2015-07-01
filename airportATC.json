@@ -1,0 +1,44 @@
+{ "YYZ_ATC": {
+	"departures": {
+		"YYZ_departures1": 128.800,
+		"YYZ_departures2": 127.575
+	},
+
+	"arrivals": {
+		"YYZ_arrivals1": 124.475,
+		"YYZ_arrivals2": 125.400,
+		"YYZ_arrivals3": 132.800
+	},
+
+	"deicing": {
+
+	},
+
+	"ground": {
+		"YYZ_ground1": 119.100,
+		"YYZ_ground2": 121.650,
+		"YYZ_ground3": 121.900
+	},
+
+	"apron": {
+		"YYZ_apron1": 122.075,
+		"YYZ_apron2": 122.275,
+		"YYZ_apron3": 122.825
+	},
+
+	"clearance":{
+		"YYZ_clearance":121.500
+	},
+
+	"atis":{
+
+	},
+
+	"tower": {
+		"YYZ_towerN": 118.700,
+		"YYZ_towerS": 118.350
+	}
+
+
+	}
+}

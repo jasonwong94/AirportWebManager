@@ -1,0 +1,40 @@
+{ "YYZ_departureInfo": {
+	"CX825":{
+		"destination": "Hong Kong",
+		"callsign": "Cathay Pacific",
+		"departureTime":{
+			"estimated": "13.45",
+			"actual":"13.20"
+			}
+		},
+
+	"AC016":{
+		"destination": "Hong Kong",
+		"callsign": "Air Canada",
+		"departureTime": {
+			"estimated": "10.00",
+			"actual": "11.15"
+			}
+		},
+
+	"BR36":{
+		"destination": "Taiwan",
+		"callsign": "EVA Airlines",
+		"departureTime":{
+			"estiamted": "21.00",
+			"actual": "20.00"
+			}
+		},
+
+	"CX829":{
+		"destination": "Hong Kong",
+		"callsign": "Cathay Pacific",
+		"departureTime":{
+			"estimated": "13.45",
+			"actual": "14.00"
+		}
+	}
+
+	}
+
+}

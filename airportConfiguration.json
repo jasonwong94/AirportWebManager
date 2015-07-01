@@ -1,0 +1,31 @@
+{ "YYZ_configuration": 
+	{
+		"Terminals":{
+				"Terminal1":{
+					"A":{10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20},
+					"B":{22, 23, 24, 25, 26, 27},
+					"C":{30, 31, 32, 33, 34, 35, 36}
+				},
+
+				"Terminal2:"{
+					"Y":{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}
+				}
+			},
+
+		"Runways":{
+				"15L-33R":{
+					"Length":"2000m",
+					"Surface":"Concrete",
+					"ILS":"",
+					"Active": "false"
+				},
+				"15R-33L":{
+					"Length":"3000m",
+					"Surface":"Concrete",
+					"ILS":"",
+					"Active": "true"
+				}
+
+			},
+	}
+}

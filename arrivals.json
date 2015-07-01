@@ -1,0 +1,45 @@
+{ "YYZ_arrivalInfo": {
+	"CX828":{
+		"source": "Hong Kong",
+		"callsign": "Cathay Pacific",
+		"arrivalTime":{
+			"estimated": "13.45",
+			"actual":"13.20"
+			},
+		"arrivalGate": "C36"
+		},
+
+
+	"AC016":{
+		"source": "Hong Kong",
+		"callsign": "Air Canada",
+		"arrivalTime": {
+			"estimated": "10.00",
+			"actual": "11.15"
+			},
+		"arrivalGate": "B12"
+		},
+
+	"BR36":{
+		"source": "Taiwan",
+		"callsign": "EVA Airlines",
+		"arrivalTime":{
+			"estiamted": "21.00",
+			"actual": "20.00"
+			},
+		"arrivalGate": "A10"
+		},
+
+	"CX826":{
+		"source": "Hong Kong",
+		"callsign": "Cathay Pacific",
+		"arrivalTime":{
+			"estimated": "20.45",
+			"actual": "23.00"
+		},
+		"arrivalGate": "C36"
+	}
+
+	}
+
+}
